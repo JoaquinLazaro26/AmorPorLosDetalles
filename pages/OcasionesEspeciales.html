@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="../img/home/icon1.png" type="image/x-icon">
+
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../css/styles copy.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="../css/OcasionesEspeciales.css">
+  <title>Ocasiones Especiales</title>
+
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="../img/home/Logo.png" alt=""> <i class='bx bxs-gift'></i>
+      </a>
+
+      <!-----------------------------------------MENU-SPECIAL----------------------------->
+      <div class="nav__menu">
+        <ul class="nav__list">
+
+          <nav class="navegacion">
+            <ul class="menu">
+
+              <li class="nav__item">
+                <a href="../index.html" class="nav__link">
+                  <i class='bx bx-home-alt-2'></i>
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li class="nav__item productos">
+
+                <a href="#popular" class="nav__link">
+                  <i class='bx bx-gift'></i>
+                  <span>Productos</span>
+                </a>
+
+                <ul class="submenu">
+                  <li class="SUBMENU">
+                    <a href="../pages/OcasionesEspeciales.html">Ocasiones Especiales</a>
+                    <ul class="SUBMENU1">
+                      <a href="../pages/DiadelaMadre.html">Día de la Madre</a>
+                      <a href="../pages/Cumpleaños.html">Cumpleaños</a>
+                      <a href="../pages/Aniversario.html">Aniversario</a>
+                    </ul>
+                  </li>
+
+                  <li class="SUBMENU">
+                    <a href="#"> Obsequios</a>
+                    <ul class="SUBMENU1">
+                      <a href="../pages/Peluches.html">Peluches</a>
+                      <a href="../pages/Cestas.html">Cestas</a>
+                      <a href="../pages/Cajas.html">Boxes</a>
+
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+
+              <li class="nav__item">
+                <a href="#value" class="nav__link">
+                  <i class='bx bx-award'></i>
+                  <span>Value</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#value" class="nav__link">
+                  <i class='bx bx-award'></i>
+                  <span>Nosotros</span>
+                </a>
+
+                <ul class="submenu">
+                  <li><a href="../pages/AboutUs.html">¿Quiénes Somos?</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class='bx bx-phone'></i>
+                  <span>Contact</span>
+                </a>
+
+            </ul>
+          </nav>
+        </ul>
+      </div>
+
+
+      <!--------------------------------------------------------------->
+      <!-----------------------------------FIN------MENU-SPECIAL----------------------------->
+      <!-----------Theme change button------------>
+      <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+
+      <!---------------------------CARRITO DE COMPRAS-------------------------->
+      <li class="submenu1">
+        <i class='bx bx-cart-alt' id="carritoCompra"></i>
+        <div id="carrito">
+
+          <table id="lista-carrito" class="order-table">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <a href="#" id="vaciar-carrito" class="vaciar u-full-width">Vaciar Carrito</a>
+          <a href="#" id="procesar-compra" class="pagar u-full-width">Pagar</a>
+
+        </div>
+      </li>
+      <!--------------------FIN-------CARRITO DE COMPRAS-------------------------->
+      <!----------------------------------------------------->
+
+      <a href="../pages/Login.html" class="button nav__button">
+        Login
+      </a>
+    </nav>
+  </header>
+  <!-----------------------------------FIN HEADER----------------------->
+
+
+
+  <div class="port">
+    <img src="../img/OcasionesEspeciales/pexels-photo-5638747.jpg" alt="">
+    <div class="title-port">
+      <h1>Ocasiones Especiales</h1>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ratione ab atque quia omnis ut
+        numquam alias tempore, animi corporis aliquam perferendis eum ipsum inventore at eligendi beatae
+        quisquam iure!</p> -->
+    </div>
+
+    <div class="scroll">
+      <i class="uil uil-angle-double-down"></i>
+    </div>
+  </div>
+
+  <div class="tipos" id="tipos">
+    <div class="cumple">
+      <a href="#">
+        <img src="../img/OcasionesEspeciales/cumple.jpg" alt="">
+        <h1>Cumpleaños</h1>
+      </a>
+    </div>
+
+    <div class="mom">
+      <a href="#">
+        <img src="../img/OcasionesEspeciales/mom.jpg" alt="">
+        <h1>Día de la Madre</h1>
+      </a>
+    </div>
+
+    <div class="Aniversario">
+      <a href="#">
+        <img src="../img/OcasionesEspeciales/ani.jpg" alt="">
+        <h1>Aniversario</h1>
+      </a>
+    </div>
+  </div>
+
+  <div class="lomas-pedido">
+    <div class="title-pedido">
+      <h1>Los Obsequios más pedidos</h1>
+    </div>
+    <i id="row-left" class="uil uil-angle-left-b"></i>
+    <div class="prox" id="productos">
+      <div class="pro">
+        <h2>Cerdito</h2>
+        <img src="../img/OcasionesEspeciales/cerdito.png" alt="">
+        <input class="button-add" type="submit" value="Comprar">
+      </div>
+      <div class="pro">
+        <h2>Pingui</h2>
+        <img src="../img/OcasionesEspeciales/pingui.jpg" alt="">
+        <input class="button-add" type="submit" value="Comprar">
+      </div>
+      <div class="pro">
+        <h2>Rosas</h2>
+        <img src="../img/OcasionesEspeciales/rosas.jpg" alt="">
+        <input class="button-add" type="submit" value="Comprar">
+      </div>
+      <div class="pro">
+        <h2>Globito</h2>
+        <img src="../img/OcasionesEspeciales/globito.jpg" alt="">
+        <input class="button-add" type="submit" value="Comprar">
+      </div>
+    </div>
+    <i id="row-rigth" class="uil uil-angle-right-b"></i>
+  </div>
+
+  <div class="especiales">
+    <div class="titleEsp">
+      <h1>Los Especiales</h1>
+    </div>
+
+    <div class="primero">
+      <img id="img-one" class="izquierda" src="..//img/OcasionesEspeciales/cajita.jpg" alt="">
+      <p>Nuestra canastas son las top en el mercado decorativo y regalos
+        ya que cuentan con todas las espectivas del usuario nuestro socio el comprador
+        tenemos grandes variaciones, siguenos y compra para vivir la experiencia "Amor por los detalles".
+      </p>
+    </div>
+
+    <div class="segundo">
+      <img id="img-two" class="derecha" src="..//img/OcasionesEspeciales/cajita2.jpg" alt="">
+      <p>Nuestros regalos hechos con las mas finas rosas, chocolates, peluches, vinos entre otros adornos, permiten al
+        comprador cumplir con todas las demandas para regalar aquella personita tan especial para él o ella.
+      </p>
+    </div>
+  </div>
+
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+
+    <div class="footer__container container grid">
+      <div>
+        <a href="#" class="footer__logo">
+          Love for Details <i class='bx bxs-gift'></i>
+        </a>
+
+        <p class="footer__description">
+          Nuestra vision es lograr que todos <br>encuentren los
+          mejores detalles <br>para los momentos claves<br> en su vida.
+        </p>
+      </div>
+
+      <div class="footer__content">
+        <div>
+          <h3 class="footer__title">
+            Nosotros
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="./AboutUs.html" target="_blank" class="footer__link">¿Quiénes somos?</a>
+            </li>
+
+            <li>
+              <a href="../index.html" target="_blank" class="footer__link">Página principal</a>
+            </li>
+
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Horario de Atención
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Lunes-Sábado <br> 9:00 am -10:00pm</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Domingo <br> 10:00 am -10:00pm</a>
+            </li>
+
+          </ul>
+        </div>
+
+
+
+        <div>
+          <h3 class="footer__title">
+            Contáctanos
+          </h3>
+
+          <ul class="footer__links">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-facebook-circle'></i>
+              <i class='bx bxl-instagram-alt'></i>
+              <i class='bx bxl-pinterest'></i>
+            </a>
+
+
+            <li>
+              <i class='bx bxs-book-open'></i>
+              <a href="../pages/reclamaciones.html" target="_blank" class="footer__link">Reclamaciones</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__info container">
+      <span class="footer__copy">
+        &#169; Noemi Vargas. All rigths reserved
+      </span>
+
+      <div class="footer__privacy">
+        <a href="#">Terms & Agreements</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-chevrons-up"></i>
+  </a>
+
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="../js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="../js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="../js/main.js"></script>
+  <script src="../js/mainA.js"></script>
+
+  <!-- ===================================== -->
+  <script src="../js/Carrito.js"></script>
+  <script src="../js/ocasionesEspeciales.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./img/home/icon1.png" type="image/x-icon">
+
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./css/styles copy.css">
+
+
+  <title>Home</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="../img/home/Logo.png" alt=""> <i class='bx bxs-gift'></i>
+      </a>
+
+      <!-----------------------------------------MENU-SPECIAL----------------------------->
+      <div class="nav__menu">
+        <ul class="nav__list">
+
+          <nav class="navegacion">
+            <ul class="menu">
+
+              <li class="nav__item">
+                <a href="..//AMOR_POR_LOS_DETALLES(WEB)/index.html" class="nav__link">
+                  <i class='bx bx-home-alt-2'></i>
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li class="nav__item productos">
+
+                <a href="#popular" class="nav__link">
+                  <i class='bx bx-gift'></i>
+                  <span>Productos</span>
+                </a>
+
+                <ul class="submenu">
+                  <li class="SUBMENU">
+                    <a href="./pages/OcasionesEspeciales.html">Ocasiones Especiales</a>
+                    <ul class="SUBMENU1">
+                      <a href="./pages/DiadelaMadre.html">Día de la Madre</a>
+                      <a href="./pages/Cumpleaños.html">Cumpleaños</a>
+                      <a href="./pages/Aniversario.html">Aniversario</a>
+                    </ul>
+                  </li>
+
+                  <li class="SUBMENU">
+                    <a href="#"> Obsequios</a>
+                    <ul class="SUBMENU1">
+                      <a href="./pages/Peluches.html">Peluches</a>
+                      <a href="./pages/Cestas.html">Cestas</a>
+                      <a href="./pages/Cajas.html">Boxes</a>
+
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+
+              <li class="nav__item">
+                <a href="#value" class="nav__link">
+                  <i class='bx bx-award'></i>
+                  <span>Value</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#value" class="nav__link">
+                  <i class='bx bx-award'></i>
+                  <span>Nosotros</span>
+                </a>
+
+                <ul class="submenu">
+                  <li><a href="./pages/AboutUs.html">¿Quiénes Somos?</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class='bx bx-phone'></i>
+                  <span>Contact</span>
+                </a>
+
+            </ul>
+          </nav>
+        </ul>
+      </div>
+
+
+      <!--------------------------------------------------------------->
+      <!-----------------------------------FIN------MENU-SPECIAL----------------------------->
+      <!-----------Theme change button------------>
+      <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+
+      <!---------------------------CARRITO DE COMPRAS-------------------------->
+      <li class="submenu1">
+        <i class='bx bx-cart-alt' id="carritoCompra"></i>
+        <div id="carrito">
+
+          <table id="lista-carrito" class="order-table">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <a href="#" id="vaciar-carrito" class="vaciar u-full-width">Vaciar Carrito</a>
+          <a href="../pages/Pago.html" id="procesar-compra" class="pagar u-full-width">Pagar</a>
+
+        </div>
+      </li>
+      <!--------------------FIN-------CARRITO DE COMPRAS-------------------------->
+      <!----------------------------------------------------->
+
+      <a href="./pages/Login.html" class="button nav__button">
+        Login
+      </a>
+    </nav>
+  </header>
+  <!-----------------------------------FIN HEADER----------------------->
+
+
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">
+            Amor <br> por los <br> Detalles
+          </h1>
+          <p class="home__description">
+            Find a variety of properties that suit you very easily,
+            forget all difficulties in finding a residence for you
+          </p>
+
+
+
+          <div class="home__value">
+            <div>
+              <h1 class="home__value-number">
+
+              </h1>
+              <span class="home__value-description">
+                Premiun <br> Product
+              </span>
+            </div>
+
+            <div>
+              <h1 class="home__value-number">
+
+              </h1>
+
+              <span class="home__value-description">
+                Happy <br> Customer
+              </span>
+            </div>
+
+            <div>
+              <h1 class="home__value-number">
+              </h1>
+
+              <span class="home__value-description">
+                Awards <br> Winning
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="home__images">
+          <div class="home__orbe"></div>
+
+          <div class="home__img">
+            <img src="./img/home/image1.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==================== LOGOS ====================-->
+    <section class="logos section">
+      <div class="logos__container container grid">
+        <div class="logos__img">
+          <img src="./img/home/logo.jpg" alt="">
+        </div>
+
+        <div class="logos__img">
+          <img src="./img/home/logo.jpg" alt="">
+        </div>
+
+        <div class="logos__img">
+          <img src="./img/home/logo.jpg" alt="">
+        </div>
+
+        <div class="logos__img">
+          <img src="./img/home/logo.jpg" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <!--==================== POPULAR ====================-->
+    <section class="section" id="popular">
+      <div class="container">
+        <span class="section__subtitle">Best Choise</span>
+        <h2 class="section__title">
+          Popular Products <span>.</span>
+        </h2>
+
+
+        <div class="popular__container swiper">
+          <div class="swiper-wrapper">
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object1.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 40.00
+                </h2>
+
+                <h3 class="popular__title">
+                  BOX 1-Dulces y osito
+                </h3>
+
+                <p class="popular__description">
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object2.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 35.00
+                </h2>
+
+                <h3 class="popular__title">
+                  BOX 2 Dulces y pequeño hipopótano
+                </h3>
+
+                <p class="popular__description">
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object3.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 50.00
+                </h2>
+
+                <h3 class="popular__title">
+                  BOXE 3 Arreglo de Flores primavera y Osito
+                </h3>
+
+                <p class="popular__description">
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object4.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 35.00
+                </h2>
+
+                <h3 class="popular__title">
+                  Box 4 Caja de Aniversario de Rosas Azules
+                </h3>
+
+                <p class="popular__description">
+
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object5.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 25.00
+                </h2>
+
+                <h3 class="popular__title">
+                  Triple Globo
+                </h3>
+
+                <p class="popular__description">
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object6.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 40.00
+                </h2>
+
+                <h3 class="popular__title">
+                  Caja Sorpresa
+                </h3>
+
+                <p class="popular__description">
+
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+
+            <article class="popular__card swiper-slide">
+              <img src="./img/home/object7.png" alt="" class="popular__img">
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>S/</span> 40.00
+                </h2>
+
+                <h3 class="popular__title">
+                  High Box- Teddy Pig
+                </h3>
+
+                <p class="popular__description">
+                  Lima - Perú
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== VALUE ====================-->
+    <section class="value section" id="value">
+      <div class="value__container container grid">
+        <div class="value__images">
+          <div class="value__orbe"></div>
+          <div class="value__img">
+            <img src="./img/home/flores" alt="">
+          </div>
+        </div>
+
+        <div class="value__content">
+          <div class="value__data">
+            <span class="section__subtitle">Our Values</span>
+            <h2 class="section_title">
+              Valor que te damos <span>.</span>
+            </h2>
+            <p class="value__description">
+              Nosotros estamos listos para ayudarte y proveerte el mejor servicio <br>
+              We always ready to help you by providing the best service for you.
+              We believe in a good detail to make your life better.
+            </p>
+          </div>
+
+
+
+          <div class="value__accordion-item">
+            <header class="value__accordion-header">
+              <i class='bx bxs-bar-chart-square value__accordion-icon'></i>
+              <h3 class="value__accordion-title">
+                Los Mejores Precios del Mercado
+              </h3>
+
+              <div class="value__accordion-arrow">
+                <i class='bx bxs-down-arrow'></i>
+              </div>
+            </header>
+
+            <div class="value__accordion-content">
+              <p class="value__accordion-description">
+                Nosotros ofrecemos los mejores precios por temporada en todos nuestros productos.
+                Garantizamos los mejores productos que te
+                acompañen a demostrar tu amor en detalles.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="value__accordion-item">
+            <header class="value__accordion-header">
+              <i class='bx bxs-check-square value__accordion-icon'></i>
+              <h3 class="value__accordion-title">
+                Calidad y Seguridad
+              </h3>
+
+              <div class="value__accordion-arrow">
+                <i class='bx bxs-down-arrow'></i>
+              </div>
+            </header>
+
+            <div class="value__accordion-content">
+              <p class="value__accordion-description">
+                Todos nuestros productos y arreglos florales
+                son entregados de forma segura
+                y con la mejor calidad.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <div class="contact__container container grid">
+        <div class="contact__images">
+          <div class="contact__orbe"></div>
+
+          <div class="contact__img">
+            <img src="./img/home/flor.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <div class="contact__data">
+            <span class="section__subtitle">Contact us </span>
+            <h2 class="section_title">
+              Contáctanos <span>.</span>
+            </h2>
+            <p class="contact__description">
+              Is there a problem finding your dream detail? Need a guide in buying
+              first detail? just contact us.
+            </p>
+          </div>
+
+          <div class="contact__card">
+            <div class="contact__card-box">
+              <div class="contact__card-info">
+                <i class='bx bxs-phone-call'></i>
+                <div>
+                  <h3 class="contact__card-title">
+                    Call
+                  </h3>
+
+                  <p class="contact__card-description">
+                    952102061
+                  </p>
+                </div>
+              </div>
+
+              <button class="button contact__card-button">
+                Call Now
+              </button>
+            </div>
+
+
+            <div class="contact__card-box">
+              <div class="contact__card-info">
+                <i class='bx bxs-message-rounded-dots'></i>
+                <div>
+                  <h3 class="contact__card-title">
+                    Chat
+                  </h3>
+
+                  <p class="contact__card-description">
+                    (+51) 952102061
+                  </p>
+                </div>
+              </div>
+
+              <button class="button contact__card-button">
+                Chat Now
+              </button>
+            </div>
+
+
+            <div class="contact__card-box">
+              <div class="contact__card-info">
+                <i class='bx bxs-video'></i>
+                <div>
+                  <h3 class="contact__card-title">
+                    Video Call
+                  </h3>
+
+                  <p class="contact__card-description">
+                    022.321.165.19
+                  </p>
+                </div>
+              </div>
+
+              <button class="button contact__card-button">
+                Video Call Now
+              </button>
+            </div>
+
+
+            <div class="contact__card-box">
+              <div class="contact__card-info">
+                <i class='bx bxs-envelope'></i>
+                <div>
+                  <h3 class="contact__card-title">
+                    Message
+                  </h3>
+
+                  <p class="contact__card-description">
+                    yarytsa-2012<br>@hotmail.com
+                  </p>
+                </div>
+              </div>
+
+              <button class="button contact__card-button">
+                Message Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    <!--==================== SUBSCRIBE ====================-->
+    <section class="subscribe section">
+
+      <div class="subscribe__container container">
+        <h1 class="subscribe__title">
+          Get Started with Amor por los Detalles
+        </h1>
+
+        <p class="subscribe__description">
+          Subscribe and find super attractive price quotes from us Find your special detail soon.
+        </p>
+
+        <a href="#" class="button subscribe__button">
+          Get Started
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+
+    <div class="footer__container container grid">
+      <div>
+        <a href="#" class="footer__logo">
+          Love for Details <i class='bx bxs-gift'></i>
+        </a>
+
+        <p class="footer__description">
+          Nuestra vision es lograr que todos <br>encuentren los
+          mejores detalles <br>para los momentos claves<br> en su vida.
+        </p>
+      </div>
+
+      <div class="footer__content">
+        <div>
+          <h3 class="footer__title">
+            Nosotros
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="./pages/AboutUs.html" target="_blank" class="footer__link">¿Quiénes somos?</a>
+            </li>
+
+            <li>
+              <a href="/index.html" target="_blank" class="footer__link">Página principal</a>
+            </li>
+
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Horario de Atención
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Lunes-Sábado <br> 9:00 am -10:00pm</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Domingo <br> 10:00 am -10:00pm</a>
+            </li>
+
+          </ul>
+        </div>
+
+
+
+        <div>
+          <h3 class="footer__title">
+            Contáctanos
+          </h3>
+
+          <ul class="footer__links">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-facebook-circle'></i>
+              <i class='bx bxl-instagram-alt'></i>
+              <i class='bx bxl-pinterest'></i>
+            </a>
+
+
+            <li>
+              <i class='bx bxs-book-open'></i>
+              <a href="/pages/reclamaciones.html" target="_blank" class="footer__link">Reclamaciones</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__info container">
+      <span class="footer__copy">
+        &#169; Noemi Vargas. All rigths reserved
+      </span>
+
+      <div class="footer__privacy">
+        <a href="#">Terms & Agreements</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-chevrons-up"></i>
+  </a>
+
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="./js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

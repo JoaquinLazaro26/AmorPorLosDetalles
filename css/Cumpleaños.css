@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/*PORTADA*/
+
+.port{
+    *border: red solid 1px;
+    width: 95%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 55px;
+}
+
+.port img{
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title-port{
+    *border: red solid 1px;
+    height: 35%;
+    width: 53%;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+.title-port h1{
+    font-size: 100px;
+    font-family: 'Fira Sans Condensed';
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 3px 3px #CBCBCB;
+    *letter-spacing: 5px;
+    color: #111111;
+}
+
+.title-port p{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    text-align: justify;
+    font-family: 'ABeeZee';
+    color: white;
+}
+
+
+
+.scroll i{
+    position: absolute;
+    right: 50%;
+    top: 95%;
+    font-size: 55px;
+    animation-name: mov;
+    animation-iteration-count: infinite;
+    animation-duration: 2800ms;
+  
+}
+
+@keyframes mov{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.card-all-products{
+    *border: red 1px solid;
+    width: 95%;
+    height: 1500px;
+    margin: auto;
+
+    
+}
+
+.title-prods h2{
+    *border: red 1px solid;
+    text-align: center;
+    margin: 105px ;
+    font-family: 'Source Sans Pro';
+    font-size: 50px;
+    color: #111111;
+}
+
+
+
+.products{
+    width: 98%;
+    *border: red 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    height: 1500px;
+}
+
+.card{
+    *border: red 1px solid;
+    position: relative;
+    height: 450px;
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card i{
+    position: absolute;
+    left: 85%;
+    font-size: 35px;
+}
+
+.img-pro {
+    width: 260px;
+    height: 200px;
+    border: 0.5px solid #dfdede;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px auto;
+}
+
+.img-pro img{
+    height: 180px;
+    width: 180px;
+    display: block;
+    margin: auto;
+    
+   
+}
+
+.desc-pro{
+    border: 0.5px solid #dfdede;
+    border-radius:  0px 0px 5px 5px;
+    position: relative;
+    margin: auto;
+    width: 260px;
+    height: 200px;
+    padding: 5px;
+}
+
+.desc-pro h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: normal;
+    color: #787878;
+    margin: 20px -25px ;
+}
+
+.desc-pro h4:nth-child(1){
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #414142;
+}
+.desc-pro h4:nth-child(2){
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #414142d0;
+    padding-left: 8px;
+}
+
+.price{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 198px;
+    height: 42px;
+    top: 35%;
+    left: 10%;
+    *border: 0.5px solid #dfdede;
+}
+
+.desc-pro input{
+    width: 240px;
+    height: 38px;
+    background-color: #DEE3D9;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    right: 3%;
+}
+
+.desc-pro input:hover{
+    background-color: #DEE3D9;
+    color: black;
+    opacity: 0.8;
+}
+
+/* .save{
+    fill: white;
+    stroke:black ;
+    stroke-width: 15px;
+    cursor: pointer;
+}
+
+.save:checked {
+    fill: black;
+    *transition:  ease-in-out 300ms;
+} */
+
+
+/*Separador*/
+
+.separador{
+    width: 95%;
+    margin: auto;
+    --background-color: #4a5872d4;
+    border-radius: 5px 5px 0  0 ;
+}
+
+/*Ponerlo como favorito*/
+
+
+#h1,#h2,#h3,#h4,#h5,#h6,
+#h7,#h8,#h9,#h10,#h11,#h12
+{
+    width: 35px;
+    stroke: #FF1F63;
+    fill: #CBCBCB;
+    stroke-dasharray: 54;
+    stroke-dashoffset: 54;
+    position: absolute;
+    top: 2%;
+    left: 75%;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#h1.like {
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h2.like {
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h3.like {
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h4.like {
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+
+#h5.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h6.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h7.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h8.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h9.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h10.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+
+#h11.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+#h12.like{
+    animation:  2s ease-in forwards like, 
+    0.8s linear 2s 1 forwards beat;
+}
+
+
+#h1,#h2.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+#h3.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+#h4.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+#h5.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+
+#h6.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+
+#h7.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+
+#h8.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+
+#h9.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+
+#h10.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+
+#h11.unlike{
+    animation:  2s ease-out forwards unlike;
+}
+
+@keyframes like{
+    0%{
+        stroke-dashoffset: 54;
+        fill: #CBCBCB;
+    }
+
+    75%{
+        stroke-dashoffset: 0;
+        fill: #CBCBCB;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+        fill: #FF1F63;
+    }
+}
+
+
+@keyframes beat {
+    0%{
+        transform: scale(1,1);
+    }
+
+    50%{
+        transform: scale(0.9,0.9);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+@keyframes unlike{
+    0%{
+        stroke-dashoffset: 0;
+        fill: #FF1F63;
+        
+    }
+
+    30%{
+        stroke-dashoffset: 0;
+        fill: #CBCBCB;
+    }
+
+    100%{
+        stroke-dashoffset: 54;
+        fill: #CBCBCB;
+    }
+}
+
+@media screen and (max-width: 980px){
+
+    .port{
+        *border: red solid 1px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 130px;
+    }
+    
+    .port img{
+        width: 100%;
+        height: 720px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .title-port{
+        *border: red solid 1px;
+        height: 35%;
+        width: 53%;
+        position: absolute;
+        left: 5%;
+        top: 40%;
+    }
+    
+    .title-port h1{
+        font-size: 100px;
+        font-family: 'Fira Sans Condensed';
+        text-transform: uppercase;
+        font-weight: 800;
+        text-shadow: 3px 3px #CBCBCB;
+        *letter-spacing: 5px;
+        color: #111111;
+    }
+    
+    .title-port p{
+        position: absolute;
+        top: 40%;
+        left: 1%;
+        text-align: justify;
+        font-family: 'ABeeZee';
+        color: white;
+    }
+        
+
+    .scroll i{
+        position: absolute;
+        left: 48%;
+        top: 89%;
+        font-size: 55px;
+        animation-name: mov;
+        animation-iteration-count: infinite;
+        animation-duration: 2800ms;
+        
+    }
+    
+    @keyframes mov{
+        0%{
+            transform: translateY(0px);
+        }
+    
+        50%{
+            transform: translateY(-20px);
+        }
+    
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+
+    
+}
