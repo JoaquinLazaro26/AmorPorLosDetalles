@@ -9,25 +9,48 @@ isset($_POST['claveValidar']) && !empty($_POST['claveValidar']) )
 {
     require_once('conexion.php');
     //Query de validación en la base de datos
-    $consulta = "Select * from usuarios where usuario = '$usuario' or correo = '$usuario' and clave = '$clave'";
-    $resultado = mysqli_query($EnlaceBD, $consulta);
-    
+    if($usuario == "admin"){
+        $consulta = "Select * from usuarios where usuario = 'admin' and clave = 'admin'";
+        $resultado = mysqli_query($EnlaceBD, $consulta);
 
-    $filas = mysqli_num_rows($resultado);
+        $filas = mysqli_num_rows($resultado);
 
-    if($filas>0){
+        if($filas>0){
         echo '<script language="javascript">
-        alert("Logeado Correctamente");
-        window.location.href = "../index.html";
+        alert("Bienvenido administrador");
+        window.location.href = "../pages/Peluches.html";
         </script>';
-    }else{
-        echo "Error en la autentificación";
-    }
-    mysqli_free_result($resultado);
-    mysqli_close($EnlaceBD);
-
-}else{
-    echo "Error al conectar con la base de datos";
+        }else{
+        echo '<script language="javascript">
+        alert("Error en la autentificación");
+        window.location.href = "../pages/Login.html";
+        </script>';
+        }
+        mysqli_free_result($resultado);
+        mysqli_close($EnlaceBD);
+    }else if($usuario != "admin"){
+            $consulta = "Select * from usuarios where usuario = '$usuario' or correo = '$usuario' and clave = '$clave'";
+            $resultado = mysqli_query($EnlaceBD, $consulta);
+            $filas = mysqli_num_rows($resultado);
+            if($filas>0){
+                echo '<script language="javascript">
+                alert("Logeado Correctamente");
+                window.location.href = "../index.html";
+                </script>';
+            }else{
+                echo '<script language="javascript">
+                alert("Error en la autentificación");
+                window.location.href = "../pages/Login.html";
+                </script>';
+            }
+            mysqli_free_result($resultado);
+            mysqli_close($EnlaceBD);
+        }
 }
-
+else{
+    echo '<script language="javascript">
+    alert("Todos los campos son obligatorios");
+    window.location.href = "../pages/Login.html";
+    </script>';
+}
 ?>
