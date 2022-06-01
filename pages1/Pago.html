@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../img/home/icon1.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/styles copy 2.css">
+
+    <link rel="stylesheet" href="../css/Pago.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="../js/Carrito.js"></script>
+   
+
+    <title>Pago</title>
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../img/home/Logo.png" alt=""> <i class='bx bxs-gift'></i>
+            </a>
+
+            <!-----------------------------------------MENU-SPECIAL----------------------------->
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <nav class="navegacion">
+                        <ul class="menu">
+
+                            <li class="nav__item">
+                                <a href="../index.html" class="nav__link">
+                                    <i class='bx bx-home-alt-2'></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav__item productos">
+
+                                <a href="#popular" class="nav__link">
+                                    <i class='bx bx-gift'></i>
+                                    <span>Productos</span>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li class="SUBMENU">
+                                      <a href="../pages1/OcasionesEspeciales.html">Ocasiones Especiales</a>
+                                      <ul class="SUBMENU1">
+                                        <a href="../pages1/DiadelaMadre.html">Día de la Madre</a>
+                                        <a href="../pages1/Cumpleaños.html">Cumpleaños</a>
+                                        <a href="../pages1/Aniversario.html">Aniversario</a>
+                                      </ul>
+                                    </li>
+                  
+                                    <li class="SUBMENU">
+                                      <a href="#"> Obsequios</a>
+                                      <ul class="SUBMENU1">
+                                        <a href="../pages1/Peluches.html">Peluches</a>
+                                        <a href="../pages1/Cestas.html">Cestas</a>
+                                        <a href="../pages1/Cajas.html">Boxes</a>
+                  
+                                      </ul>
+                                    </li>
+                  
+                                </ul>
+                            </li>
+
+
+                            <li class="nav__item">
+                                <a href="#value" class="nav__link">
+                                    <i class='bx bx-award'></i>
+                                    <span>Value</span>
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#value" class="nav__link">
+                                    <i class='bx bx-award'></i>
+                                    <span>Nosotros</span>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li><a href="../pages1/AboutUs.html">¿Quiénes Somos?</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">
+                                    <i class='bx bx-phone'></i>
+                                    <span>Contact</span>
+                                </a>
+
+                        </ul>
+                    </nav>
+                </ul>
+            </div>
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------------------FIN------MENU-SPECIAL----------------------------->
+
+
+            <!-----------Theme change button------------>
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
+            <i class='bx bx-cart-alt'></i>
+
+            <a href="../pages1/Login.html" class="button nav__button">
+                Login
+            </a>
+
+            <!--<i class='bx bx-sun'></i>-->
+        </nav>
+    </header>
+
+    <!-----------------------------------FIN HEADER----------------------->
+    <img class="imgPago" src="../img/Compra/bannerPago.png" alt="">
+    <main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <form id="procesar-pago" action="#">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa nombre cliente" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+                            </div>
+                        </div>
+
+                        <div id="carrito1" class="table-responsive">
+                            <table class="table" id="lista-compra">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">IGV :</th>
+                                    <th scope="col">
+                                        <p id="igv"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="total"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-center" id="loaders">
+                            <img id="cargando" src="../img/Compra/mail.gif" width="220">
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="../index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <a href="" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    Love for Details <i class='bx bxs-gift'></i>
+                </a>
+
+                <p class="footer__description">
+                    Nuestra vision es lograr que todos <br>encuentren los
+                    mejores detalles <br>para los momentos claves<br> en su vida.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Nosotros
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="../pages1/AboutUs.html" target="_blank" class="footer__link">¿Quiénes somos?</a>
+                        </li>
+
+                        <li>
+                            <a href="../index.html" target="_blank" class="footer__link">Página principal</a>
+                        </li>
+
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Horario de Atención
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Lunes-Sábado <br> 9:00 am -10:00pm</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Domingo <br> 10:00 am -10:00pm</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div>
+                    <h3 class="footer__title">
+                        Contáctanos
+                    </h3>
+
+                    <ul class="footer__links">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-instagram-alt'></i>
+                            <i class='bx bxl-pinterest'></i>
+                        </a>
+
+
+                        <li>
+                            <i class='bx bxs-book-open'></i>
+                            <a href="/pages1/reclamaciones.html" target="_blank" class="footer__link">Reclamaciones</a>
+                          </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169; Noemi Vargas. All rigths reserved
+            </span>
+
+            <div class="footer__privacy">
+                <a href="#">Terms & Agreements</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-chevrons-up"></i>
+    </a>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./js/main.js"></script>
+
+    
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/compra.js"></script>
+
+</body>
+
+</html>

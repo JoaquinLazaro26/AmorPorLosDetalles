@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../img/home/icon1.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/stylesProductosGeneral.css">
+    <link rel="stylesheet" href="../css/Peluches.css">
+
+
+    <title>Peluches</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../img/home/Logo.png" alt=""> <i class='bx bxs-gift'></i>
+            </a>
+
+            <!-----------------------------------------MENU-SPECIAL----------------------------->
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <nav class="navegacion">
+                        <ul class="menu">
+
+                            <li class="nav__item">
+                                <a href="../index.html" class="nav__link">
+                                    <i class='bx bx-home-alt-2'></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav__item productos">
+
+                                <a href="#popular" class="nav__link">
+                                    <i class='bx bx-gift'></i>
+                                    <span>Productos</span>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li class="SUBMENU">
+                                      <a href="../pages1/OcasionesEspeciales.html">Ocasiones Especiales</a>
+                                      <ul class="SUBMENU1">
+                                        <a href="../pages1/DiadelaMadre.html">Día de la Madre</a>
+                                        <a href="../pages1/Cumpleaños.html">Cumpleaños</a>
+                                        <a href="../pages1/Aniversario.html">Aniversario</a>
+                                      </ul>
+                                    </li>
+                  
+                                    <li class="SUBMENU">
+                                      <a href="#"> Obsequios</a>
+                                      <ul class="SUBMENU1">
+                                        <a href="../pages1/Peluches.html">Peluches</a>
+                                        <a href="../pages1/Cestas.html">Cestas</a>
+                                        <a href="../pages1/Cajas.html">Boxes</a>
+                  
+                                      </ul>
+                                    </li>
+                  
+                                </ul>
+                            </li>
+
+
+                            <li class="nav__item">
+                                <a href="#value" class="nav__link">
+                                    <i class='bx bx-award'></i>
+                                    <span>Value</span>
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#value" class="nav__link">
+                                    <i class='bx bx-award'></i>
+                                    <span>Nosotros</span>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li><a href="../pages1/AboutUs.html">¿Quiénes Somos?</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">
+                                    <i class='bx bx-phone'></i>
+                                    <span>Contact</span>
+                                </a>
+
+                        </ul>
+                    </nav>
+                </ul>
+            </div>
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------------------FIN------MENU-SPECIAL----------------------------->
+            <!-----------Theme change button------------>
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+
+            <!---------------------------CARRITO DE COMPRAS-------------------------->
+            <li class="submenu1">
+                <i class='bx bx-cart-alt' id="carritoCompra"></i>
+                <div id="carrito">
+
+                    <table id="lista-carrito" class="order-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="vaciar u-full-width">Vaciar Carrito</a>
+                    <a href="#" id="procesar-compra" class="pagar u-full-width">Pagar</a>
+
+                </div>
+            </li>
+            <!--------------------FIN-------CARRITO DE COMPRAS-------------------------->
+            <!----------------------------------------------------->
+
+            <a href="../pages1/Login.html" class="button nav__button">
+                Login
+            </a>
+        </nav>
+    </header>
+    <!-----------------------------------FIN HEADER----------------------->
+
+    <div class="port">
+        <img src="..//img/Obsequios/o.jpg" alt="">
+        <div class="title-port">
+            <h1>Peluches</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ratione ab atque quia omnis ut
+                numquam alias tempore, animi corporis aliquam perferendis eum ipsum inventore at eligendi beatae
+                quisquam iure!</p> -->
+        </div>
+
+        <div class="scroll">
+            <i class="uil uil-angle-double-down"></i>
+        </div>
+    </div>
+
+    <div class="separador">
+        <div class="card-all-products">
+            <div class="title-prods">
+                <h2>Nuestras diferentes variedades en Peluches
+                </h2>
+            </div>
+
+            <div class="products" id="productos">
+
+                <div class="card">
+                    <svg class="heart" id="h1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="..//img/Obsequios/ob1.jpg" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Peluche - Monkey-basic</h2>
+                        <div class="price">
+                            <h4>S/. <span>18.00</span> </h4>
+                            <h4>(S/.24/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="38-A" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart"  id="h2"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="..//img/Obsequios/ob2.jpg" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Pingüinito - Feliz día </h2>
+                        <div class="price">
+                            <h4>S/. <span>14.00</span> </h4>
+                            <h4>(S/.20/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="38-B" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="..//img/Obsequios/peluche-de-amor-oso.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osito - I Love You</h2>
+                        <div class="price">
+                            <h4>S/. <span>18.00</span> </h4>
+                            <h4>(S/.24/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="38-C" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="../img/Obsequios/pelu.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osito de Nieve - Arreglo floral</h2>
+                        <div class="price">
+                            <h4>S/. <span>28.00</span> </h4>
+                            <h4>(S/.38/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="38-D" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="../img/Obsequios/xd.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osito - I Love You - Basic</h2>
+                        <div class="price">
+                            <h4>S/. <span>14.00</span> </h4>
+                            <h4>(S/.18/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="38-F" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="../img/Obsequios/pus.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osito Floral - Edición Spring</h2>
+                        <div class="price">
+                            <h4>S/. <span>38.00</span> </h4>
+                            <h4>(S/.44/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="38-G" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="../img/Obsequios/sss.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Peluchito Osi - Complet</h2>
+                        <div class="price">
+                            <h4>S/. <span>58.00</span> </h4>
+                            <h4>(S/.74/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="39" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="../img/Obsequios/ele.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Elefantito - Basic</h2>
+                        <div class="price">
+                            <h4>S/. <span>18.00</span> </h4>
+                            <h4>(S/.34/oz)</h4>
+                        </div>
+                        <input class="button-add" data-id="40" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="..//img/Obsequios/ew.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osiosi - Leoncito</h2>
+                        <div class="price">
+                            <h4>S/. <span>38.00</span> </h4>
+                            <h4>(S/.44/oz)</h4>
+                        </div>
+                        <input  class="button-add" data-id="41" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="..//img/Obsequios/qw.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osito - Floral Basic</h2>
+                        <div class="price">
+                            <h4>S/. <span>48.00</span> </h4>
+                            <h4>(S/.56/oz)</h4>
+                        </div>
+                        <input  class="button-add" data-id="42" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="../img/Obsequios/ositosblancos_600x.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Osi osi - Edición Winter</h2>
+                        <div class="price">
+                            <h4>S/. <span>28.00</span> </h4>
+                            <h4>(S/.38/oz)</h4>
+                        </div>
+                        <input  class="button-add" data-id="43" type="submit" value="Comprar">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="heart" id="h12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div class="img-pro">
+                        <img src="..//img/Obsequios/teq.png" alt="">
+                    </div>
+                    <div class="desc-pro">
+                        <h2>Pandoru - Cute</h2>
+                        <div class="price">
+                            <h4>S/. <span>48.00</span> </h4>
+                            <h4>(S/.56/oz)</h4>
+                        </div>
+                        <input  class="button-add" data-id="45" type="submit" value="Comprar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        Love for Details <i class='bx bxs-gift'></i>
+                    </a>
+
+                    <p class="footer__description">
+                        Nuestra vision es lograr que todos <br>encuentren los
+                        mejores detalles <br>para los momentos claves<br> en su vida.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            Nosotros
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="./pages1/AboutUs.html" target="_blank" class="footer__link">¿Quiénes somos?</a>
+                            </li>
+
+                            <li>
+                                <a href="/index.html" target="_blank" class="footer__link">Página principal</a>
+                            </li>
+
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Horario de Atención
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Lunes-Sábado <br> 9:00 am -10:00pm</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Domingo <br> 10:00 am -10:00pm</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <div>
+                        <h3 class="footer__title">
+                            Contáctanos
+                        </h3>
+
+                        <ul class="footer__links">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-instagram-alt'></i>
+                                <i class='bx bxl-pinterest'></i>
+                            </a>
+
+
+                            <li>
+                                <i class='bx bxs-book-open'></i>
+                                <a href="/pages1/reclamaciones.html" target="_blank"
+                                    class="footer__link">Reclamaciones</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer__info container">
+                <span class="footer__copy">
+                    &#169; Noemi Vargas. All rigths reserved
+                </span>
+
+                <div class="footer__privacy">
+                    <a href="#">Terms & Agreements</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-chevrons-up"></i>
+        </a>
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="../js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../js/main.js"></script>
+        <script src="../js/mainA.js"></script>
+        <script src="../js/Carrito.js"></script>
+        <script src="../js/implementarCarrito.js"></script>
+</body>
+
+</html>

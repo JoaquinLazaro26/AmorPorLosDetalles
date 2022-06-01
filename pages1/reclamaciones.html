@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../img/home/icon1.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/styles copy 3.css">
+    <link href="../css/reclamaciones.css" rel="stylesheet">
+
+
+    <title>Responsive real state website - Bedimcode</title>
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../img/home/Logo.png" alt=""> <i class='bx bxs-gift'></i>
+            </a>
+
+            <!-----------------------------------------MENU-SPECIAL----------------------------->
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <nav class="navegacion">
+                        <ul class="menu">
+
+                            <li class="nav__item">
+                                <a href="../index.html" class="nav__link">
+                                    <i class='bx bx-home-alt-2'></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav__item productos">
+
+                                <a href="#popular" class="nav__link">
+                                    <i class='bx bx-gift'></i>
+                                    <span>Productos</span>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li class="SUBMENU">
+                                      <a href="../pages1/OcasionesEspeciales.html">Ocasiones Especiales</a>
+                                      <ul class="SUBMENU1">
+                                        <a href="../pages1/DiadelaMadre.html">Día de la Madre</a>
+                                        <a href="../pages1/Cumpleaños.html">Cumpleaños</a>
+                                        <a href="../pages1/Aniversario.html">Aniversario</a>
+                                      </ul>
+                                    </li>
+                  
+                                    <li class="SUBMENU">
+                                      <a href="#"> Obsequios</a>
+                                      <ul class="SUBMENU1">
+                                        <a href="../pages1/Peluches.html">Peluches</a>
+                                        <a href="../pages1/Cestas.html">Cestas</a>
+                                        <a href="../pages1/Cajas.html">Boxes</a>
+                  
+                                      </ul>
+                                    </li>
+                  
+                                </ul>
+                            </li>
+
+
+                            <li class="nav__item">
+                                <a href="#value" class="nav__link">
+                                    <i class='bx bx-award'></i>
+                                    <span>Value</span>
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#value" class="nav__link">
+                                    <i class='bx bx-award'></i>
+                                    <span>Nosotros</span>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li><a href="../pages1/AboutUs.html">¿Quiénes Somos?</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">
+                                    <i class='bx bx-phone'></i>
+                                    <span>Contact</span>
+                                </a>
+
+                        </ul>
+                    </nav>
+                </ul>
+            </div>
+
+
+            <!--------------------------------------------------------------->
+            <!-----------------------------------FIN------MENU-SPECIAL----------------------------->
+
+
+            <!-----------Theme change button------------>
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
+            
+            <!---------------------------CARRITO DE COMPRAS-------------------------->
+            <li class="submenu1">
+                <i class='bx bx-cart-alt' id="carritoCompra"></i>
+                <div id="carrito">
+
+                    <table id="lista-carrito" class="order-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="vaciar u-full-width">Vaciar Carrito</a>
+                    <a href="#" id="procesar-compra" class="pagar u-full-width">Pagar</a>
+
+                </div>
+            </li>
+            <!--------------------FIN-------CARRITO DE COMPRAS-------------------------->
+
+
+            <a href="../pages1/Login.html" class="button nav__button">
+                Login
+            </a>
+
+            <!--<i class='bx bx-sun'></i>-->
+        </nav>
+    </header>
+
+    <!-----------------------------------FIN HEADER----------------------->
+
+    <div id="top">
+        <br><br><br><br>
+        <center>
+            <img src="../img/reclamaciones/logo.png" alt=""><br>
+            <h1 class="titulo1">LIBRO DE RECLAMACIONES</h1>
+        </center>
+    </div>
+    <div id="formulario">
+        <h2>Libro de Reclamaciones</h2><br><br>
+
+        <section id="primera">
+
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre(s)*" class="input-48">
+            <input id="departamento" type="text" name="departamento" placeholder="Departamento*"
+                class="input-2"><br><br>
+            <input id="paterno" type="text" name="paterno" placeholder="Apellido Paterno*" class="input-48">
+            <input id="provincia" type="text" name="provincia" placeholder="Provincia*" class="input-2"><br><br>
+            <input id="materno" type="text" name="materno" placeholder="Apellido Materno*" class="input-48">
+            <input id="distrito" type="text" name="distrito" placeholder="Distrito*" class="input-2"><br>
+
+            <br>
+            <input id="telefono" type="text" name="telefono" placeholder="Teléfono*" class="input-48">
+            <input id="email" type="email" name="email" placeholder="Email*" class="input-2"><br><br>
+            <input id="direccion" type="text" name="direccion" placeholder="Dirección*" class="input-48">
+
+
+            <p>Tipo de Documento</p>
+            <select name="" id="">
+                <option value="dni">DNI</option>
+                <option value="carnet">Carnet de Extranjeria</option>
+                <option value="pasaporte">Pasaporte</option>
+            </select>
+            <br><br>
+            <input id="documento" type="text" name="documento" placeholder="Nro de Documento*" class="input-48">
+            <input id="reclamo" type="text" name="reclamo" placeholder="Escriba aqui su reclamo*" class="input-2">
+            <br><br>
+            <input type="submit" value="Enviar"></input>
+
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    Love for Details <i class='bx bxs-gift'></i>
+                </a>
+
+                <p class="footer__description">
+                    Nuestra vision es lograr que todos <br>encuentren los
+                    mejores detalles <br>para los momentos claves<br> en su vida.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Nosotros
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="../pages1/AboutUs.html" target="_blank" class="footer__link">¿Quiénes somos?</a>
+                        </li>
+
+                        <li>
+                            <a href="../index.html" target="_blank" class="footer__link">Página principal</a>
+                        </li>
+
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Horario de Atención
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Lunes-Sábado <br> 9:00 am -10:00pm</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Domingo <br> 10:00 am -10:00pm</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div>
+                    <h3 class="footer__title">
+                        Contáctanos
+                    </h3>
+
+                    <ul class="footer__links">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-instagram-alt'></i>
+                            <i class='bx bxl-pinterest'></i>
+                        </a>
+
+
+                        <li>
+                            <i class='bx bxs-book-open'></i>
+                            <a href="/pages1/reclamaciones.html" target="_blank" class="footer__link">Reclamaciones</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169; Noemi Vargas. All rigths reserved
+            </span>
+
+            <div class="footer__privacy">
+                <a href="#">Terms & Agreements</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-chevrons-up"></i>
+    </a>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="../js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

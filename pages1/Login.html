@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="../img/home/icon1.png" type="image/x-icon">
+
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../css/styles copy 2.css">
+  <link rel="stylesheet" href="../css/login.css">
+
+
+  <title>Login</title>
+</head>
+
+<body>
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">
+        <img src="../img/home/Logo.png" alt=""> <i class='bx bxs-gift'></i>
+      </a>
+
+      <!-----------------------------------------MENU-SPECIAL----------------------------->
+      <div class="nav__menu">
+        <ul class="nav__list">
+
+          <nav class="navegacion">
+            <ul class="menu">
+
+              <li class="nav__item">
+                <a href="../index.html" class="nav__link">
+                  <i class='bx bx-home-alt-2'></i>
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li class="nav__item productos">
+
+                <a href="#popular" class="nav__link">
+                  <i class='bx bx-gift'></i>
+                  <span>Productos</span>
+                </a>
+
+                <ul class="submenu">
+                  <li class="SUBMENU">
+                    <a href="../pages1/OcasionesEspeciales.html">Ocasiones Especiales</a>
+                    <ul class="SUBMENU1">
+                      <a href="../pages1/DiadelaMadre.html">Día de la Madre</a>
+                      <a href="../pages1/Cumpleaños.html">Cumpleaños</a>
+                      <a href="../pages1/Aniversario.html">Aniversario</a>
+                    </ul>
+                  </li>
+
+                  <li class="SUBMENU">
+                    <a href="#"> Obsequios</a>
+                    <ul class="SUBMENU1">
+                      <a href="../pages1/Peluches.html">Peluches</a>
+                      <a href="../pages1/Cestas.html">Cestas</a>
+                      <a href="../pages1/Cajas.html">Boxes</a>
+
+                    </ul>
+                  </li>
+
+              </ul>
+              </li>
+
+
+              <li class="nav__item">
+                <a href="#value" class="nav__link">
+                  <i class='bx bx-award'></i>
+                  <span>Value</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#value" class="nav__link">
+                  <i class='bx bx-award'></i>
+                  <span>Nosotros</span>
+                </a>
+
+                <ul class="submenu">
+                  <li><a href="../pages1/AboutUs.html">¿Quiénes Somos?</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class='bx bx-phone'></i>
+                  <span>Contact</span>
+                </a>
+
+            </ul>
+          </nav>
+        </ul>
+      </div>
+
+
+      <!--------------------------------------------------------------->
+      <!-----------------------------------FIN------MENU-SPECIAL----------------------------->
+
+
+      <!-----------Theme change button------------>
+      <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+      <!---------------------------CARRITO DE COMPRAS-------------------------->
+      <li class="submenu1">
+        <i class='bx bx-cart-alt' id="carritoCompra"></i>
+        <div id="carrito">
+
+          <table id="lista-carrito" class="order-table">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <a href="#" id="vaciar-carrito" class="vaciar u-full-width">Vaciar Carrito</a>
+          <a href="#" id="procesar-compra" class="pagar u-full-width">Pagar</a>
+
+        </div>
+      </li>
+      <!--------------------FIN-------CARRITO DE COMPRAS-------------------------->
+
+      <a href="../pages1/Login.html" class="button nav__button">
+        Login
+      </a>
+
+      <!--<i class='bx bx-sun'></i>-->
+    </nav>
+  </header>
+
+  <!-----------------------------------FIN HEADER----------------------->
+
+
+
+  <!--------------- HEADER - NAVEGACION --------------->
+  <main>
+
+    <div class="contenedor__todo">
+      <div class="caja__trasera">
+        <div class="caja__trasera-login">
+          <h3>¿Ya tienes una cuenta?</h3>
+          <p>Inicia sesión para entrar en la página</p>
+          <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+        </div>
+        <div class="caja__trasera-register">
+          <h3>¿Aún no tienes una cuenta?</h3>
+          <p>Regístrate para que puedas iniciar sesión</p>
+          <button id="btn__registrarse">Regístrarse</button>
+        </div>
+      </div>
+
+      <!--Formulario de Login y registro-->
+      
+      <div class="contenedor__login-register">
+        <!--Login-->
+        <form class="formulario__login" method="post" action="../php/ValidarUsuario.php">
+          <h2>Iniciar Sesión</h2>
+          <input type="text" name="usuarioValidar" id="correo1" placeholder="Usuario o Correo Electrónico">
+          <input type="password" name="claveValidar" id="contraseña1" placeholder="Contraseña">
+          <button  type="submit" value="Enviar" >Entrar</button>
+        </form>
+
+        <!--Register-->
+        <form action="../php/RegistrarUsuario.php" class="formulario__register" method="post" >
+          <h2>Regístrarse</h2>
+          <input type="text" name="nombre" placeholder="Nombre completo">
+          <input type="text" name="correo" id="correo" placeholder="Correo Electronico">
+          <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+          <input type="password" name="clave" id="contraseña" placeholder="Contraseña">
+          <button type="submit">Regístrarse</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  
+
+
+  <!--------------FOOTER----------------->
+
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-chevrons-up"></i>
+  </a>
+
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="../js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="../js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="../js/main.js"></script>
+
+
+  <!--============================-->
+  <script src="../js/script.js"></script>
+  <script src="../js/general.js"></script>
+</body>
+
+</html>
