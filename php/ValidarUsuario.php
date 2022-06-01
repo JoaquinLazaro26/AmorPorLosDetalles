@@ -18,7 +18,7 @@ isset($_POST['claveValidar']) && !empty($_POST['claveValidar']) )
         if($filas>0){
         echo '<script language="javascript">
         alert("Bienvenido administrador");
-        window.location.href = "../pages/Peluches.html";
+        window.location.href = "../template.html";
         </script>';
         }else{
         echo '<script language="javascript">
