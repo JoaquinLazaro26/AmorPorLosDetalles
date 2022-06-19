@@ -166,7 +166,7 @@
 
     procesarPedido(e){
         e.preventDefault();
-        location.href="../pages/pago.html";
+        location.href="../pages1/pago.html";
     }
 
     calcularTotal(){
