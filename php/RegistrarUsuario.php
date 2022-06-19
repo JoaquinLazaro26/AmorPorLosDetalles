@@ -17,7 +17,7 @@ isset($_POST['clave']) && !empty($_POST['clave']) )
     mysqli_query($EnlaceBD,"INSERT INTO usuarios VALUES('$nombre','$correo','$usuario','$clave')");
     echo '<script language="javascript">
         alert("Usuario Registrado Correctamente");
-        window.location.href = "../pages/Login.html";
+        window.location.href = "../pages1/Login.html";
         </script>';
 
 }else{
